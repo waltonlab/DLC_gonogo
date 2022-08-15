@@ -8,12 +8,10 @@ Notes:
 - The files for plotting can be used independent of the files for analysis (though some functions may overlap).
 - In some (most...) areas is poorly commented/formatted. If you have any questions, feel free to contact at: grimal@janelia.hhmi.org 
 
-## Overview
-
 ## Analysis
 ***DLC_gonogo_master*** 
 Define parameters and file paths. 
-Calls *DLC_filesort* to identify behaviour sessions that have DLC data counterparts. Depends on *get_dlc_filenames* and *get_exp_filenames_dlc*.
+  Calls *DLC_filesort* to identify behaviour sessions that have DLC data counterparts. Depends on *get_dlc_filenames* and *get_exp_filenames_dlc*.
 Calls *DLC_extract* to first deal with aligning MED-PC and DLC data. Then generates a struct, all_dlc, containing all relevant DLC and behaviour data for analysis. This also depends on a few other functions: 
   - *get_event_times*:    returns timestamps for errors and cues. Dependent on *mpc_read_data*
   - *DLC_preproc*:        reads DLC data and interpolates. Dependent on *DLC_RawRead_gonogo* and *interpolateLowConfidence*
