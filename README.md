@@ -9,10 +9,9 @@ Notes:
 - In some (most...) areas is poorly commented/formatted. If you have any questions, feel free to contact at: grimal@janelia.hhmi.org 
 
 ## Analysis
-***DLC_gonogo_master*** 
-Define parameters and file paths. 
-  Calls *DLC_filesort* to identify behaviour sessions that have DLC data counterparts. Depends on *get_dlc_filenames* and *get_exp_filenames_dlc*.
-Calls *DLC_extract* to first deal with aligning MED-PC and DLC data. Then generates a struct, all_dlc, containing all relevant DLC and behaviour data for analysis. This also depends on a few other functions: 
+***DLC_gonogo_master***.      
+Calls *DLC_filesort* to identify behaviour sessions that have DLC data counterparts. Depends on *get_dlc_filenames* and *get_exp_filenames_dlc*.  
+Calls *DLC_extract* to first deal with aligning MED-PC and DLC data. Then generates a struct, all_dlc, containing all relevant DLC and behaviour data for analysis. This also depends on a few other functions:   
   - *get_event_times*:    returns timestamps for errors and cues. Dependent on *mpc_read_data*
   - *DLC_preproc*:        reads DLC data and interpolates. Dependent on *DLC_RawRead_gonogo* and *interpolateLowConfidence*
   - *DLC_findpeaks*:      identifies peaks in average luminance for video/behaviour alignment 
@@ -21,9 +20,8 @@ Calls *DLC_extract* to first deal with aligning MED-PC and DLC data. Then genera
   - *DLC_plotbox*:        finds median points of DLC-labelled box features (poke, levers, etc.)
   
 ## Plotting
-***DLC_gonogo_master_plotting***
-Define parameters and file paths.
-Key functions:
+***DLC_gonogo_master_plotting***.   
+Key functions:  
 - *DLC_get_event_latency* for the latency from cue onset to a specific behavioural event (e.g. first lever press).
 - *DLC_tracking_window* for normalised x,y co-ordinates in a time window.
 - *DLC_3D_pdf* for calculating a pdf of occupation of each bin, when the box is divided into a grid. Can also plot.
