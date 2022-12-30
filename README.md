@@ -6,7 +6,7 @@ Notes:
 - Currently only works on Windows thanks to VideoReader not working on Mac (yet?)
 - This is very bespoke code, written to tackle issues with aligning video and behaviour, as well as analysing and plotting the DLC data itself once extracted
 - The files for plotting can be used independent of the files for analysis (though some functions may overlap).
-- In some (most...) areas is poorly commented/formatted. If you have any questions, feel free to contact at: grimal@janelia.hhmi.org 
+- For any questions, feel free to contact: grimal@janelia.hhmi.org 
 
 ## Analysis
 ***DLC_gonogo_master***.      
